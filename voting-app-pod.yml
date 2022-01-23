@@ -1,0 +1,16 @@
+---
+apiversion: v1
+kind: pod
+metadata:
+  name: voting-app-pod
+  labels:
+    author: akashdaida
+    name: voting-app
+spec:
+  containers:
+    - name: voting-app
+      image:  dockersamples/examplevotingapp_vote
+      ports:
+        - Containerport: 80
+...
+

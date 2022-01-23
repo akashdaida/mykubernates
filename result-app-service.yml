@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: serveice
+metadata:
+  name: result-app-service
+  labels:
+    author: akashdaida
+spec:
+  type: LoadBalancer
+  ports:
+    - targetport: 80
+      port: 80
+  selector:
+    author: akashdaida
+    name: result-app
+...

@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: service
+metadata:
+  name: voting-app-service
+  labels:
+    author: akashdaida
+spec:
+  type: LoadBalancer
+  ports:
+    - tragetport: 80
+      port: 80
+  selector:
+    author: akashdaida
+    name: voting-app
+...

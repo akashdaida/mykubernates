@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: pod
+metadata:
+  name: redis-pod
+  labels:
+    author: akashdaida
+    name: redis
+spec:
+  containers:
+    - name: myredis
+      image: redis
+      ports:
+        - container: 6372
+...
